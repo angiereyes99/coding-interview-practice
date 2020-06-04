@@ -18,21 +18,28 @@ class Solution:
     # And if the arr has one of the multiples 
     # in the products lst, it will return True.
     # - However, this wil not work when considering 0 
-    # b/c 0 * 2 = 0. And if the arr has 0 and products 
-    # list has 0, it will return True. But this should 
-    # return False because [1,2,0] does not have another 0.
+    # b/c 0 * 2 = 0. So, we create another list
+    # to store everytime we see a 0. And if we see
+    # a 0 more than once, we return true.
 
     # -> arr = [10, 2, 5, 3]
     # New list -> products = [20, 4, 10, 6] True
 
-    # 103/104 TEST CASES PASSED IN TERMS OF LEETCODE
+    # Runtime 76 ms
+    # Memory: 13.8 MB
+    # Faster than 22.46% of Python submissions.
     def approach1(self, arr: List[int]) -> bool:
         
         products = []
         zeros = []
 
         for i in range(len(arr)):
-            products.append(arr[i] * 2)
+            if arr[i] == 0:
+                zeros.append(arr[i])
+                if len(zeros) == 2:
+                    return True
+            else:
+                products.append(arr[i] * 2)
         
         for i in range(len(arr)):
             for j in range(len(products)):
@@ -50,6 +57,7 @@ class Solution:
 
     # Runtime: 88 ms
     # Memory: 13.8 MB
+    # Faster than 29.31% of Python submissions.
     def approach2(self, arr: List[int]) -> bool:
         
         for i in range(len(arr)):
@@ -58,6 +66,7 @@ class Solution:
                     return True
         
         return False
+
 
 
 
