@@ -13,6 +13,6 @@
 
 ### Levels Status:
 
-> Easy Problems: In progress, moderate
-> Medium Problems: beginner
-> Hard Problems: Have not attempted
+> Easy Problems: In progress, moderate.
+> Medium Problems: beginner.
+> Hard Problems: Have not attempted.
