@@ -1,5 +1,12 @@
 ## Coding Interview Prep
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
+
 ### Progress:
 
 
@@ -13,6 +20,6 @@
 
 ### Levels Status:
 
-> Easy Problems: In progress, moderate.
-> Medium Problems: beginner.
-> Hard Problems: Have not attempted.
+> * + Easy Problems: In progress, moderate
+> * Medium Problems: beginner
+> * Hard Problems: Have not attempted
