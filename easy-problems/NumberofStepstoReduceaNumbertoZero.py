@@ -22,6 +22,10 @@ class Solution:
     # until n is == 0. In the while loop
     # we will check everytime if the current
     # num is even or odd.
+
+    # Runtime: 20 ms
+    # Memory: 13.9 MB
+    # Faster than 98.43% of Python3 submissions.
     def approach(self, n: int) -> int:
         count = 0
         while n != 0:
