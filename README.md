@@ -2,7 +2,7 @@
 
 ### Progress:
 
-```bash
+```console
 - PRIMARY LANGUAGE: Python3
 
 Practice and get comfortable doing easy problems and the basics.
